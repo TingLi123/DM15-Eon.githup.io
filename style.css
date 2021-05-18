@@ -2,7 +2,6 @@
 
 body{
     font-family:'Montserrat', sans-serif;
-    font-size: 18pt;
     background-color: #F8F4F1;
     
 }
@@ -10,22 +9,40 @@ body{
 
 header{
     height: 120px;
-    font-size: 20pt;
-    display:flex;
-    background-color: #623A1D;
+    background-color:rgb(98,58,29,0.97);
     color: #FFFFFF;
+    position: fixed;
+    display:flex;
+    top: 0;
+    left: 0;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    
 }
 
-footer{
-    background-color: #623A1D;
-    color: #FFFFFF;
+.header{
+    width: 1000px;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    
 }
+
+.headerleft{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    float: left;
+    top:23px;
+    
+    
+}
+.headerright{
+    float: right;
+}
+
+
 
 a{
     text-decoration: none;
@@ -33,17 +50,13 @@ a{
 
 header nav a{
     color:#ffffff;
+    padding-left: 20px;
 }
 header nav a:hover{
     color:#96613A;
 }
 
 
-footer section{
-    width: 200px;
-    padding: 40px;
-    text-align: center;
-}
 
 .floatleft{
     float: left;
@@ -51,7 +64,7 @@ footer section{
 
 
 h1{
-    font-size: 100pt;
+    font-size: 100px;
     font-family: 'Satisfy', cursive;
     color:#ffffff;
 }
@@ -66,19 +79,159 @@ h1{
     color:#96613A;
 }
 
+section div{
+    background-color:#ffffff;
+    margin: auto;
+    border: 2px solid #623A1D;
+    padding: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+    color: #623A1D;
+}
+
+section div h2{
+    margin-top: 0px;
+    color: #96613A;}
+
+footer{
+    background-color: #623A1D;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+}
+footer section{
+    width: 200px;
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 
 
 
-/*=homepage=*/
+
+/*=homepage homepage homepage homepage homepage homepage homepage homepage =*/
+
+/*=homepage- after banner 4 icons=*/
 
 .homebanner{
     background-image:url(images/homepage/banner-home.jpg);
     height: 500px;
     display: flex;
+    margin-top: 120px;
+
 }
 
-article{
+#homepage{
     width: 1000px;
     margin: auto;
-
 }
+
+ * {
+  box-sizing: border-box;
+}
+        
+#homeicon{
+    padding-top: 20px;
+}
+
+#homeicon::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.homeicon{
+    width: 220px;
+    height: 220px;
+    padding: 40px;
+    float:left;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+}
+        
+.homeicon-right{
+     width: 220px;
+     height: 220px;
+     padding: 40px;
+    float:left;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;}
+
+
+/*=homepage: hours+about us+events=*/
+
+.homepage-article{
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+
+#leftside{
+    width: 480px;
+    height: 760px;
+    float: left;
+    width: 96%;
+    overflow: hidden;
+}
+
+#events{
+    width: 96%;
+    height: 760px;   float:right;
+    margin-left: 20px; 
+    overflow:hidden;
+}
+
+.hours{
+    height:318px;
+}
+.abouteon{
+    height:390px;
+}
+
+.events{
+    height: 150px;
+    width: 420px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+/*=five star=*/
+
+#fivestar{
+    display: grid;
+    grid-column: 1/5;
+}
+
+#fivestar div{
+    width: 100%;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
