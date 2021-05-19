@@ -1,59 +1,67 @@
 /*=The same contents=*/
 
+/*===all===*/
 body{
     font-family:'Montserrat', sans-serif;
-    background-color: #F8F4F1;
-    font-size:12pt;
-    
+    font-size: 14pt;
+    background-color: #F8F4F1; 
 }
 
-
-header{
-    background-color:rgb(98,58,29,0.97);
-    height: 95px;
-    color: #FFFFFF;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    align-items: center;
-    font-size: 15pt;
-    
+h1{
+    font-size: 100pt;
+    font-family: 'Satisfy', cursive;
+    color:#ffffff;
 }
 
-.header{
-    display: grid;
-    grid-template-columns: 10% 60% 30%;  
+h2{
+    font-size: 22pt;
+    margin-top: 0px;
+    color: #96613A;
+    text-align: center;
 }
-
-.header div{
-    padding: 10px;
-}
-
-.alignleft{
-    text-align: left;
-}
-.alignright{
-    text-align: right;
-}
-
-
 
 a{
     text-decoration: none;
+    color: #96613A;
 }
 
-header nav a{
+
+/*===header===*/
+
+header{
+    height: 95px;
+    font-size: 15pt;
+    background-color: #623A1D;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 7% 60% 32%;
+    
+}
+nav div{
+    display: flex;
+    align-content: center;
+    padding: 13px;
+    
+}
+
+nav a{
     color:#ffffff;
-    padding: 5px;
-    line-height: 300%;
+    padding-left: 20px;
+    line-height: 375%;
 
 }
 
-header nav a:hover{
+nav a:hover{
     color:#96613A;
 }
-
 
 
 
@@ -69,6 +77,9 @@ h1{
     color:#ffffff;
 }
 
+h2{
+    font-size: 20pt;
+}
 .banner{
     display:flex;
     align-items: center;
@@ -147,6 +158,7 @@ footer section a:hover{
         
 #homeicon{
     padding-top: 20px;
+    font-size: 12pt;
 }
 
 #homeicon::after {
@@ -173,7 +185,7 @@ footer section a:hover{
     float:left;
     align-items: center;
     justify-content: center;
-    overflow: auto;}
+    overflow: hidden;}
 
 
 /*=homepage: hours+about us+events=*/
@@ -185,7 +197,7 @@ footer section a:hover{
 
 #leftside{
     width: 480px;
-    height: 760px;
+    height: 780px;
     float: left;
     width: 96%;
     overflow: hidden;
@@ -193,23 +205,35 @@ footer section a:hover{
 
 #events{
     width: 96%;
-    height: 760px;   float:right;
+    height: 780px;   float:right;
     margin-left: 20px; 
     overflow:hidden;
 }
 
 .hours{
-    height:318px;
-}
-.abouteon{
-    height:390px;
+    height:330px;
 }
 
+.abouteon{
+    height:384px;
+    line-height: 1.4;
+}
+
+.abouteon:hover{border: 2px solid #ffffff;}
+
+#events div:hover{
+    border: 2px solid #ffffff;
+}
 .events{
     height: 150px;
     width: 420px;
     overflow: hidden;
     margin-top: 10px;
+    text-align: left;
+}
+
+.events img{
+    padding-right:20px;
 }
 
 /*=homepage:five star=*/
